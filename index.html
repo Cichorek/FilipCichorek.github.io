@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Filip 'SimLay' Cichorek</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/frinostyle.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("nav a, a.button").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1500, function(){
+                            
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(function() {
+                $(window).on("scroll", function() {
+                    if($(window).scrollTop() > 80) {
+                        $(".panel").addClass("active");
+                    } else {
+                        $(".panel").removeClass("active");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header id="home">
+            <div class="panel">
+                <div class="wrapper">
+                    <img src="img/logo.png" class="logo" alt="Logo" />
+                    <nav>
+                        <a href="#home">Home</a>
+                        <a href="#aboutme">O Mnie</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Kontakt</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Cześć, mam na imie Filip.</h1>
+                <h2>Jestem Junior Front-End Developerem.</h2>
+                <a href="#portfolio" class="button"> Sprawdź Portfolio</a>
+            </div>
+        </header>
+        <section id="aboutme">
+            <div class="wrapper">
+                <div class="box">
+                    <h1>O Mnie</h1>
+                    <h2>Kilka słówek na mój temat</h2>
+                    <div class="box left">
+                        Nazywam się Filip Cichorek pochodzę z Bydgosczy. Kodowaniem interesuje się od 2011 roku w związku z tym posiadam duże doświadczenie. Do każdego projektu podchodzę z osobnym podejście, a z racji iż jest to moja pasja potrafię zagwarantować wysoką jakość wykonania moich projektów.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="block">
+                        WWW
+                    </div>
+                    <div class="block">
+                        MyBB
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <h2>Moje ostatnie projekty</h2> 
+        </section>
+        <footer>
+            2018 &copy Created by SimLay
+        </footer>
+    </body>
+</html>
