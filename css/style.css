@@ -4,18 +4,17 @@
     padding: 0;
 }
 
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #0f0f0f; 
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #2d2b2a;
 }
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
+
 
 body {
     background: #1b1b1b url(../img/bg.png) top center repeat-x;
@@ -119,8 +118,8 @@ header .panel nav a:hover:after {
 header .box {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    width: 100%;
 }
 
 header .box h1 {
