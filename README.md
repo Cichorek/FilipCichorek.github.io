@@ -1,4 +1,4 @@
-2018 &copy Created by SimLay
+## 2018 (C) Created by SimLay
 
 Site: https://filipcichorek.github.io
 MyBB: https://community.mybb.com/user-112296.html
