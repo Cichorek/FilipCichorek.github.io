@@ -1,10 +1,10 @@
 <html>
     <head>
         <title>Filip 'SimLay' Cichorek</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/frinostyle.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/frinostyle.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="http://code.jquery.com/jquery.js"></script>
         <script>
             $(document).ready(function(){
@@ -57,25 +57,85 @@
             <div class="wrapper">
                 <div class="box">
                     <h1>O Mnie</h1>
-                    <h2>Kilka słówek na mój temat</h2>
+                    <h2>Kilka słówek na mój temat</h2> <br />
                     <div class="box left">
-                        Nazywam się Filip Cichorek w internecie znany jako SimLay pochodzę z Bydgosczy. Kodowaniem interesuje się od 2011 roku w związku z tym posiadam duże doświadczenie. Do każdego projektu podchodzę z osobnym podejście, a z racji iż jest to moja pasja potrafię zagwarantować wysoką jakość wykonania moich projektów.
+                        Nazywam się Filip Cichorek w internecie znany jako SimLay pochodzę z Bydgosczy. Kodowaniem interesuje się od 2011 roku w związku z tym posiadam duże doświadczenie. Do każdego projektu mam indywidualne podejście, a z racji iż jest to moja pasja potrafię zagwarantować wysoką jakość wykonania moich projektów.
                     </div>
                 </div>
                 <div class="row">
                     <div class="block">
-                        WWW
+                        <h3> Używane Technologie:</h3>
+                             HTML <br />
+                             CSS <br />
+                             JavaScript<br />
+                             RWD <br />
+                            <div class="low"><span></span> PHP - wkrótce</div>
                     </div>
                     <div class="block">
-                        MyBB
+                        <h3> Wdrażam:</h3>
+                             Strony WWW  <br />
+                             Szablony MyBB  <br />
+                            <div class="low"> Szablony IPB - wkrótce</div>
+                            <div class="low"> Szablony WP - wkrótce</div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="portfolio">
             <h1>Portfolio</h1>
-            <h2>Moje ostatnie projekty</h2> 
+            <h2>Moje ostatnie projekty</h2><br /> 
+            <div class="wrapper">
+                <div class="row">
+                    <div class="box mfb3">
+                        <span>
+                            <h3>MyFlatBoard v3</h3>
+                            <h4>MyBB</h4>
+                            <a href="#portfolio" class="button">Wkrótce</a>
+                        </span>
+                    </div>
+                    
+                    <div class="box port">
+                        <span>
+                            <h3>Portfolio</h3>
+                            <h4>WWW</h4>
+                            <a href="#home" class="button">Zobacz</a>
+                        </span>
+                    </div>
+                    
+                    <div class="box msb2">
+                        <span>
+                            <h3>MyStrikeBoard V2</h3>
+                            <h4>MyBB</h4>
+                            <a href="img/gallery/mystrikeboard-full.png" class="button">Zobacz</a>
+                            <a href="download/MyStrikeBoard2.zip" class="button">Pobierz</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </section>
+        <section id="contact">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="box">
+                         20591133
+                    </div>
+                    <div class="box">
+                         cichorek.filip@gmail.com
+                    </div>
+                </div>
+			     <form id="form">
+			     	<p id="returnmessage"></p>
+                    <div class="left">
+			     	   <input type="text" class="field up" id="name" placeholder="Imię i Nazwisko"/>
+                        <input type="text" class="field" id="email" placeholder="Email"/>  
+                     </div>
+                     <div class="right">   
+                         <textarea class="textarea" id="message" placeholder="Wiadomość"></textarea>
+                     </div>
+			     	<input type="button" class="button" id="submit" value="Wyślij"/>
+			     </form>
+            </div>
+	</section>
         <footer>
             2018 &copy Created by SimLay
         </footer>
