@@ -415,4 +415,7 @@ footer {
         margin: 0 auto;
         width: max-content;
     }
+    header .panel nav {
+        padding: 0 8px;
+    }
 }
