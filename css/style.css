@@ -215,12 +215,16 @@ section {
     overflow: hidden;
     position: relative;
     background-size: 100%;
-    background-position: center;
+    background-position: top center;
     transition: .5s;
 }
 
 #portfolio .row .box.mfb3 {
     background-image: url(../img/gallery/myflatboard3-min.png);
+}
+
+#portfolio .row .box.ug {
+    background-image: url(../img/gallery/ultragaming-min.png);
 }
 
 #portfolio .row .box.port {
@@ -246,6 +250,7 @@ section {
 
 #portfolio .row .box:hover {
     background-size: 150%;
+    background-position: top center;
 }
 
 #portfolio .row .box:hover span {
