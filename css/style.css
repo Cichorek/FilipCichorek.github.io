@@ -207,7 +207,6 @@ section {
 }
 
 #portfolio .row .box {
-    width: 32%;
     margin: 0 1% 2%;
     height: 300px;
     display: inline-flex;
@@ -217,6 +216,14 @@ section {
     background-size: 100%;
     background-position: top center;
     transition: .5s;
+}
+
+#portfolio .row.three .box {
+    width: 32%;
+}
+
+#portfolio .row .box.clear {
+    opacity: 0;
 }
 
 #portfolio .row .box.mfb3 {
@@ -234,6 +241,15 @@ section {
 #portfolio .row .box.msb2 {
     background-image: url(../img/gallery/mystrikeboard-min.png);
 }
+
+#portfolio .row .box.mfb2 {
+    background-image: url(../img/gallery/myflatboard2-min.png);
+}
+
+#portfolio .row .box.fg {
+    background-image: url(../img/gallery/fastgamers-min.png);
+}
+
 
 #portfolio .row .box span {
     background: #00000070;
