@@ -217,10 +217,6 @@ section {
     transition: .5s;
 }
 
-#portfolio .row.three .box {
-    width: 32%;
-}
-
 #portfolio .row .box.clear {
     opacity: 0;
 }
@@ -405,6 +401,10 @@ footer {
         margin: 0 auto 20px;
     }
     
+    #portfolio .row.three .box.clear {
+        display: none;
+    }
+    
     #contact .left, 
     #contact .right,
     #contact .row .box,
@@ -422,6 +422,12 @@ footer {
     #contact .textarea {
         text-align: center;
     }
+}
+
+@media all and (min-width:1000px) {
+   #portfolio .row.three .box {
+    width: 32%;
+    } 
 }
 
 @media all and (max-width: 600px) {
