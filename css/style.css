@@ -86,9 +86,8 @@ header .panel.active {
 }
 
 header .panel .logo {
-    float: left;
     height: 40px;
-    margin: 20px 0;
+    width: 28px;
 }
 
 header .panel nav {
@@ -137,7 +136,7 @@ header .box .button {
     border: 1px solid #eee;
     border-radius: 3px;
     transition: .5s;
-    width: max-content;
+    width: 200px;
 }
 
 header .box .button:hover {
@@ -425,18 +424,22 @@ footer {
     }
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 600px) {
     header .logo {
-        display: none;
+        display: block;
+        margin: 20px auto;
+        float: none;
     }
     
     header .panel nav {
-        float: none;
-        text-align: center;
-        margin: 0 auto;
-        width: max-content;
+        display: none
     }
-    header .panel nav {
-        padding: 0 8px;
-    }
+}
+
+@media all and (min-width: 600px) { 
+     header .logo {
+        display: block;
+        margin: 20px 0;
+        float: left;
+    }   
 }
