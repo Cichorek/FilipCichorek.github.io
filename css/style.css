@@ -206,10 +206,9 @@ section {
 }
 
 #portfolio .row .box {
-    margin: 0 1% 2%;
+    width: 100%;
     height: 300px;
     display: inline-flex;
-    border: 2px solid #eee;
     overflow: hidden;
     position: relative;
     background-size: 100%;
@@ -247,7 +246,7 @@ section {
 
 
 #portfolio .row .box span {
-    background: #00000070;
+    background: #00000090;
     text-align: center;
     position: absolute;
     top: 0;
@@ -256,12 +255,17 @@ section {
     bottom: 0;
     opacity: 0;
     transition: .5s;
-    padding: 90px 0 0;
+    padding: 107px 0;
+}
+
+#portfolio .row .box span.active {
+    opacity: 1;
 }
 
 #portfolio .row .box:hover {
     background-size: 150%;
     background-position: top center;
+    box-shadow: inset 0 0 10px 3px #1b1b1b;
 }
 
 #portfolio .row .box:hover span {
@@ -269,21 +273,27 @@ section {
 }
 
 #portfolio .row .box h3 {
-    font-size: 20px;
     font-weight:500px;
 }
 
 #portfolio .row .box h4 {
     font-weight: 300;
-    font-size: 20px;
     margin: 5px 0;
 }
 
+#portfolio .row .box h3,
+#portfolio .row .box h4 {
+    font-size: 20px;
+    cursor: default;
+    
+}
+
 #portfolio .row .box .button {
-    border: 2px solid #fff;
     padding: 10px 7px;
-    margin: 15px 5px;
+    margin: 0px 5px;
     display: inline-flex;
+    font-weight: 600;
+    text-transform:  uppercase;
 }
 
 #contact  {
@@ -396,7 +406,7 @@ footer {
     }
     
     #portfolio .row .box {
-        width: 300px;
+        max-width: 300px;
         display: block;
         margin: 0 auto 20px;
     }
@@ -422,12 +432,6 @@ footer {
     #contact .textarea {
         text-align: center;
     }
-}
-
-@media all and (min-width:1000px) {
-   #portfolio .row.three .box {
-    width: 32%;
-    } 
 }
 
 @media all and (max-width: 600px) {
