@@ -1,4 +1,4 @@
 Options +FollowSymLinks
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^filipcichorek.pl [nc]
-RewriteRule ^(.*)$ http://www.filipcichorek.pl/$1 [r=301,nc]
+RewriteCond %{HTTP_HOST} ^cichorekfilip.pl [nc]
+RewriteRule ^(.*)$ http://www.cichorekfilip.pl/$1 [r=301,nc]
